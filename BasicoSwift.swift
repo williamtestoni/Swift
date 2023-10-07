@@ -116,3 +116,17 @@ let myNumber = Int(possibleNumber)
 if let myNumber = myNumber {
     print("Meu numero é: \(myNumber)")
 }
+
+//Optionals - Implicity unwrapping
+let possibleString: String? = "É uma String"
+let forcedString: String = possibleString!
+let assumedString: String! = "Uma string forcada"
+let implicit: String = assumedString
+
+if assumedString != nil{
+    print(assumedString)
+}
+
+if let definiteString = assumedString {
+    print(definiteString)
+}
