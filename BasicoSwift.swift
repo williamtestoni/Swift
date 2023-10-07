@@ -59,3 +59,41 @@ typealias audioSample = UInt16
 var maxAplitudeFound = audioSample.max
 print(maxAplitudeFound)
 
+//Tuplas
+let http404Error = (404, "Not Found")
+// http404Error é do tipo (Int, String) é igual (404, "Not Found")
+
+print("------------------------")
+let (statusCode, statusMessage) = http404Error
+print("O statusCode é \(statusCode)")
+print("O statusMessage é \(statusMessage)")
+
+print("------------------------")
+let (justTheStatusCode, _) = http404Error
+print("O statusCode é \(justTheStatusCode)")
+
+print("------------------------")
+print("O statusCode é \(http404Error.0)")
+print("O statusMessage é \(http404Error.1)")
+
+print("------------------------")
+let http200Status = (statusCode: 200, description: "OK")
+
+print("O statusCode é \(http200Status.statusCode)")
+print("O statusMessage é \(http200Status.description)")
+
+print("------------------------")
+print("------------------------")
+
+//Optionals - null - nil
+let possibleNumber = "123"
+let convertedNumber = Int(possibleNumber)
+print(convertedNumber)
+//convertedNumer é inferido como sendo Int?, ou seja int opcional
+
+let possibleNumber2 = "lalalala"
+let convertedNumber2 = Int(possibleNumber2)
+print(convertedNumber2)
+
+var serverResponseCode: Int? = 404
+
