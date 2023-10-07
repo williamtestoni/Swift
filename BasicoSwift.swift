@@ -97,3 +97,22 @@ print(convertedNumber2)
 
 var serverResponseCode: Int? = 404
 
+//Optionals - Binding
+if let actualNumber = Int(possibleNumber){
+    print("A string \(possibleNumber) tem um valor inteiro de \(actualNumber)")
+}else{
+    print("A string \(possibleNumber) não tem um valor inteiro")
+
+}
+
+if let actualNumber = Int(possibleNumber2){
+    print("A string \(possibleNumber) tem um valor inteiro de \(actualNumber)")
+}else{
+    print("A string \(possibleNumber) não tem um valor inteiro")
+
+}
+
+let myNumber = Int(possibleNumber)
+if let myNumber = myNumber {
+    print("Meu numero é: \(myNumber)")
+}
